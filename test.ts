@@ -1,17 +1,12 @@
-let a: number = 4;
-let b: string = 'some string';
-let c = true;
-const d: string[] = ['first', 'second'];
-let e: any = 3;//do not recommend use this approach
-function test(a:string): string{
-    return '' + a;
+const a: number = 4;
+const b: string = 'some string';
+const c = 'some string second variant';
+let d: string[] = ['first value', 'second value'];
+const e: any = 3; //not recommended to use
+function test(a: number): number{
+    return a * a;
 }
-function printIt(id: number | string){
-    if(typeof id === 'number'){
-        console.log(id.toString());
-    }else if(typeof id === 'string'){
-        id.toUpperCase();
-    }
+const test2 = (a:number): number =>{
+    return a++;
 }
-const z: undefined = undefined;
-const n: null = null;
+d = d.map((x:string) => x.toLowerCase());
